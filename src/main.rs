@@ -57,10 +57,10 @@ fn input_step(siv: &mut Cursive) {
 
     siv.add_layer(
         Dialog::new()
-            .title("Project Planner")
+            .title("Newt")
             .content(
                 ListView::new()
-                    .child("projectname:", EditView::new().with_name("projectname"))
+                    .child("Project Name:", EditView::new().with_name("projectname"))
                     .child("Language: ", select_view.with_name("language_selector")),
             )
             .button("Ok", |s| {
