@@ -40,24 +40,13 @@ newt
 ```
 
 > **Tip:** run the binary from the directory where you want the new project to live. Projects are created relative to your current working directory.
-
-## How it works
-
-The whole tool lives in a single file, [src/main.rs](src/main.rs):
-
-1. `input_step` builds the cursive form (an `EditView` for the name, a `Checkbox` for git, and a `SelectView` popup for the language).
-2. On **Ok**, the selections are collected into a `ProjectInfo` struct.
-3. `setuproject` first checks whether the target folder already exists (and bails out with an error dialog if it does), then shells out to the appropriate toolchain (`cargo` / `go` / `uv`) to create the project, optionally running `git init` afterwards.
-4. A result dialog confirms the full path of the freshly created project.
-
 ## Project structure
 
 ```
 spawn/
 ├── Cargo.toml      # crate manifest (cursive, crossterm, color-eyre)
 ├── src/
-│   └── main.rs     # entire application: TUI + scaffolding logic
-└── theme.toml      # cursive theme configuration
+    └── main.rs     # entire application: TUI + scaffolding logic
 ```
 
 ## Roadmap / Ideas
