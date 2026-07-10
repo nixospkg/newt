@@ -1,4 +1,4 @@
-# spawn
+# newt
 
 A simple, effective project creation tool, written in Rust using [cursive](https://github.com/gyscos/cursive).
 
