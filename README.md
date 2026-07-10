@@ -36,7 +36,7 @@ cargo install --git https://github.com/wazzydotdev/newt
 Then run it from the directory where you want your new project:
 
 ```sh
-spawn
+newt
 ```
 
 > **Tip:** run the binary from the directory where you want the new project to live. Projects are created relative to your current working directory.
